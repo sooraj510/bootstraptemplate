@@ -20,7 +20,7 @@
     margin-top: -20px;
 }
 .bkimg{
-    background-image: url(images/bkimg.jpg);
+    background-image: url(images/template\ bkimg.jpg);
     background-size: cover;
     z-index: 1;
     object-fit: cover;
@@ -41,7 +41,7 @@
 }
 .seach{
     text-align: left;
-    padding-top: 200px;
+    padding-top: 230px;
     margin-left: 65px;
     color: white;
     height: 600px;
@@ -50,8 +50,20 @@
     margin-top: -17%;
 }
 .seach h1{
-    font-size: 50px;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background:url(images/back.png);
+    -webkit-background-clip: text;
+    animation: soo 20s linear infinite;
 }
+@keyframes soo{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+
 .col-lg-4{
     margin-left: 58px;
 }
@@ -68,7 +80,7 @@
     text-align: center;
 }
 .text{
-    color: #cacaca!important;
+    color: #a0a0a0!important;
 }
 :hover.text{
     color: rgb(0, 0, 0)!important;
@@ -89,6 +101,7 @@
     border-radius: 8%;
     padding-top: 32px;
     opacity: 0;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.118);
 }
 .eus{
 
@@ -97,7 +110,7 @@
     text-align: center;
     margin-top: 20px;
     border-radius: 8%;
-    box-shadow: 5px 0px 10px black;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.118);
     padding-top: 32px;
 }
 .reuu{
@@ -108,15 +121,7 @@
     border-radius: 8%;
     padding-top: 32px;
     position: static;
-}
-.sapi{
-    height: 300px;
-    background-color: white;
-    text-align: center;
-    border-radius: 8%;
-    margin-top: 20px;
-    padding-top: 32px;
-    position: static;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.118);
 }
 
 .gray{
@@ -156,9 +161,6 @@
     font-size: 30px;
     color: whitesmoke;
     font-weight: 900;
-}
-.black{
-    background-color: #00000082;
 }
 .cli{
     font-weight: lighter;
@@ -206,12 +208,25 @@
     margin-left: 9%;
     margin-top: -2px;
 }
-:hover.lor h4{
+:hover.lor   h4{
     color: red;
 }
 .lor i{
     font-size: 30px;
 }
+:hover.lorr  h4{
+    color: red;
+}
+.lorr i{
+    font-size: 30px;
+}
+:hover.lorrr   h4{
+    color: red;
+}
+.lorrr i{
+    font-size: 30px;
+}
+
 .fut{
     text-align: center;
 }
@@ -236,9 +251,11 @@ margin-left: 57%;
     border-radius: 5px;
     height: 38px;
 }
+.coro{
+    margin-top: 60px;
+}
 .ima{
     background-image: url(images/stare.jpg);
-    width: 500px;
     height: 300px;
     background-size: cover;
     border: 5px solid white;
@@ -267,10 +284,12 @@ margin-left: 57%;
 }
 .dar{
     height: 600px;
+    background-color: #0000005b;
 }
 .dark{
-    background-color: #00000064;
+    background-color: #00000051;
     padding-top: 150px;
+    height: 300px;
 
 }
 .all{
@@ -313,7 +332,12 @@ margin-left: 57%;
 .d{
     margin-top: -86%;
 }
-
+.fl{
+    display: flex;
+}
+.flx{
+    margin-top: -20px;
+}
 .hide{
     display: none;
     background-color: #e34343;
@@ -349,5 +373,47 @@ margin-left: 57%;
     }
     to{
         transform: translateY(0px);
+    }
+}
+.anim2{
+    animation-name: ani2;
+    animation-duration: 2s;
+    opacity: 1;
+}
+@keyframes ani2{
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+.anim5{
+    animation-name: ani5;
+    animation-duration: 2s;
+    opacity: 1;
+}
+@keyframes ani5{
+    from{
+        transform: translateY(80px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.anim3{
+    animation-name: ani3;
+    animation-duration: 2s;
+    opacity: 1;
+}
+@keyframes ani3{
+    from{
+        transform: scale(50%);
+    }
+    to{
+        transform: scale(100%);
     }
 }
