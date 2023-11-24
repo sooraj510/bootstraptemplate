@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap1.css">
     <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -22,6 +22,7 @@
         
     <script>
         $(document).ready(function(){
+            $(".black").addClass("anim1")
             $(window).scroll(function(){
                 var scroll = $(window).scrollTop();
                 if(scroll>100){
@@ -33,7 +34,54 @@
 
                 if(scroll>200){
                     $(".eius").addClass("anim1");
+
                 }
+                if(scroll>50)
+                $(".mar").addClass("anim2")
+            if(scroll>150)
+            $(".reuu").addClass("anim1")
+
+            if(scroll>500)
+            $(".eus").addClass("anim5")
+
+            if(scroll>1200)
+            $(".ser").addClass("anim5")
+
+            if(scroll>1400)
+            $(".lor").addClass("anim5")
+
+            if(scroll>1500)
+            $(".lorr").addClass("anim5")
+
+            if(scroll>1700)
+            $(".lorrr").addClass("anim5")
+
+            if(scroll>1850)
+            $(".fut").addClass("anim5")
+
+            if(scroll>2200)
+            $(".coro").addClass("anim3")
+
+            if(scroll>2200)
+            $(".aan").addClass("anim3")
+
+            if(scroll>2400)
+            $(".sunt").addClass("anim3")
+
+            if(scroll>2400)
+            $(".aut").addClass("anim3")
+
+            if(scroll>2400)
+            $(".ims").addClass("anim3")
+ 
+            if(scroll>2500)
+            $(".fut").addClass("anim5")
+
+            if(scroll>2600)
+            $(".btan").addClass("anim5")
+
+            if(scroll>2700)
+            $(".imain").addClass("anim5")
             });
         });
     </script>
@@ -75,13 +123,13 @@ $(this).prop('Counter',0).animate({
                   <a class="nav-link text" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text" href="#">About</a>
+                  <a class="nav-link text" href="#pink">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text" href="#">Service</a>
+                  <a class="nav-link text" href="#ser">Service</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text" href="#">Portfolio</a>
+                  <a class="nav-link text" href="#port">Portfolio</a>
                 </li>  
                 <li class="nav-item">
                   <a class="nav-link text" href="#">Team</a>
@@ -106,8 +154,8 @@ $(this).prop('Counter',0).animate({
     </div>
 
        <section class="bkimg">
-        <div class="black">
             <div class="dar">
+                <div class="black">
        <div class="seach">
         <h1>Welcome to Our Website </h1>
        <p class="wer"> We are team of talented designers  making websites with Bootstrap</p>
@@ -136,7 +184,7 @@ $(this).prop('Counter',0).animate({
             </div>
             <div class="col-sm-2">
                 <div class="log">
-                    <img src="images/lifegrp.png" alt="" class="pic"  height="50%"width="50%">
+                    <img src="images/lifgrp.png" alt="" class="pic"  height="50%"width="50%">
                 </div>
             </div>
             <div class="col-sm-2">
@@ -151,7 +199,7 @@ $(this).prop('Counter',0).animate({
             </div>
             <div class="col-sm-2">
                 <div class="log">
-                    <img src="images/trustly.png" alt="" class="pic"  height="50%" width="50%">
+                    <img src="images/turstly.png" alt="" class="pic"  height="50%" width="50%">
                 </div>
             </div>
         </div>
@@ -161,7 +209,7 @@ $(this).prop('Counter',0).animate({
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <div class="pink">
+                <div class="pink" id="pink">
                     <button class="ab">About Us</button>
                     <h1>Ducimus rerum libero reprehenderit cumque</h1>
                     <p>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem tempora deleniti soluta.</p> 
@@ -195,7 +243,7 @@ $(this).prop('Counter',0).animate({
                     <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p>
                 </div>
                 </div>
-                <div class="sapi">
+                <div class="eus">
                     <div class="circle">
                     <i class="bi-graph-up-arrow"></i>
                 </div>
@@ -215,10 +263,10 @@ $(this).prop('Counter',0).animate({
         <div class="dark">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3"><div><span class="count">323</span> </div> <span class="cli">CLIENTS</span></div>
-                <div class="col-sm-3"> <span class="count">521</span> <br> <span class="cli">PROJECT</span></div>
-                <div class="col-sm-3"><span class="count">1453</span>  <br> <span class="cli">HOUR OF SUPPORT</span></div>
-                <div class="col-sm-3"><span class="count">32</span>  <br> <span class="cli">WORKER</span></div>
+                <div class="col-sm-3"><div class="flx"><span class="count">323</span> <br><span class="cli">CLIENTS</span></div> </div>
+                <div class="col-sm-3"> <div class="flx"><span class="count">521</span> <br> <span class="cli">PROJECT</span></div></div>
+                <div class="col-sm-3"><div class="flx"><span class="count">1453</span>  <br> <span class="cli">HOUR OF SUPPORT</span></div></div>
+                <div class="col-sm-3"><div class="flx"><span class="count">32</span>  <br> <span class="cli">WORKER</span></div></div>
             </div>
         </div>
     </div>
@@ -227,7 +275,7 @@ $(this).prop('Counter',0).animate({
         <div class="row">
             <div class="col-sm-12">
                 <div class="ser">
-                <h1>service</h1>
+                <h1 id="ser">service</h1>
                 <div class="red"></div> 
                 <div class="re"></div>
                 <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
@@ -260,7 +308,7 @@ $(this).prop('Counter',0).animate({
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="lor">
+                    <div class="lorr">
                         <div class="ro"></div><div class="dr"></div> <br>
                         <i class="bi-bar-chart"></i>
                         <h4>sed ut perispiciatis</h4>
@@ -268,7 +316,7 @@ $(this).prop('Counter',0).animate({
                     </div>
                 </div> <br>
                 <div class="col-sm-6">
-                    <div class="lor">
+                    <div class="lorr">
                         <div class="ro"></div><div class="dr"></div><br>
                         <i class="bi-binoculars"></i>
                         <h4>magni dolores sitema</h4>
@@ -281,7 +329,7 @@ $(this).prop('Counter',0).animate({
         <div class="container fade-up">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="lor">
+                    <div class="lorrr">
                         <div class="ro"></div><div class="dr"></div> <br>
                         <i class="bi-brightness-high"></i>
                         <h4>nemo enim</h4>
@@ -289,7 +337,7 @@ $(this).prop('Counter',0).animate({
                     </div>
                 </div> <br>
                 <div class="col-sm-6">
-                    <div class="lor">
+                    <div class="lorrr">
                         <div class="ro"></div><div class="dr"></div><br>
                         <i class="bi-calendar4-week"></i>
                        <a href=""></a> <h4>eiusmod tempor</h4>
@@ -297,7 +345,7 @@ $(this).prop('Counter',0).animate({
                     </div>
                 </div>
             </div>
-        </div> <br>
+        </div> <br> <br><br><br>
 
         <div class="container">
             <div class="row">
@@ -310,7 +358,7 @@ $(this).prop('Counter',0).animate({
                 </div>
                </div>
         </div>
-    </div>
+    </div> <br><br><br>
     <div class="container">
         <div class="row">
             <div class="col-sm-5">
@@ -321,10 +369,12 @@ $(this).prop('Counter',0).animate({
                 </div>
             </div>
             <div class="col-sm-7">
+                <div class="aan">
                 <div class="ima">
                 </div>
                 <img src="images/light.jpg" alt="" class="val">
             </div>
+        </div>
         </div>
     </div>
      <br><br> 
@@ -340,12 +390,14 @@ $(this).prop('Counter',0).animate({
                     <h2>Sunt consequatur adut nulla</h2>
                     <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>  </div> <br>
                     <ul class="lin">
+                        <div class="aut">
                         <i class="bi-check">
                             Ullamco laboris nisi ut aliquip ex ea commodo consequat.</i> <br>
                         <i class="bi-check">
                             Duis aute irure dolor in reprehenderit in voluptate velit.</i><br>
                         <i class="bi-check">Facilis ut et voluptatem aperiam. Autem soluta ad fugiat
                         </i>
+                    </div>
                     </ul>
             </div>
         </div>
@@ -356,7 +408,7 @@ $(this).prop('Counter',0).animate({
         <div class="row">
             <div class="col-sm-12">
                 <div class="fut">
-                <h1>Portfolio</h1>
+                <h1 id="port">Portfolio</h1>
                 <div class="pl"></div> 
                 <div class="pla"></div><br>
                 <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
@@ -364,19 +416,22 @@ $(this).prop('Counter',0).animate({
            </div>
     </div>
 </div>
-
+<div class="btan">
 <button class="all">
     All
 </button>
 <button class="al">
-    App
+  <a href="b" target="app">App</a> 
 </button>
 <button class="al">
     Card
 </button>
 <button class="al">
     Web
-</button> <br><br><br><br><br><br>
+</button>
+</div>
+ <br><br><br>
+ <iframe></iframe>
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
@@ -457,6 +512,5 @@ $(this).prop('Counter',0).animate({
     }
     .bc{
         background-color: rgb(255, 255, 255);
-        color: black;
     }
 </style>
